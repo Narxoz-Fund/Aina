@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINA | Волонтер болу</title>
+    <link rel="icon" type="image/png" href="aina_logo_nobg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="sub-page">
+
+    <!-- Minimal Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content sub-nav">
+            <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> <span
+                    data-i18n="nav.back">Артқа</span></a>
+            <a href="index.html" class="logo centered-logo">
+                <img src="aina_logo_nobg.png" alt="AINA Logo" class="logo-img">
+                <span class="logo-text">Aina</span>
+            </a>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="kk">ҚАЗ</button>
+                <button class="lang-btn" data-lang="ru">РУС</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mini Hero -->
+    <header class="mini-hero mini-hero--join">
+        <div class="mini-hero-overlay"></div>
+        <div class="mini-hero-content animate-on-scroll">
+            <h1 class="mini-hero-title" data-i18n="join.hero_title">AINA-ға қосылу</h1>
+            <p class="mini-hero-subtitle" data-i18n="join.hero_subtitle">Волонтер немесе ментор ретінде қосылып, бір
+                баланың болашағына әсер етіңіз.</p>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content container animate-on-scroll" style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="editorial-block" id="regFormContainer"
+            style="max-width: 750px; margin: 0 auto; padding: 50px; border-radius: 24px; background: linear-gradient(to bottom right, #ffffff, #f8fafc); box-shadow: 0 20px 40px rgba(0,0,0,0.08); border: 1px solid rgba(255,255,255,1);">
+
+            <div class="text-center mb-4">
+                <h2 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;" data-i18n="join.welcome">
+                    Қош келдіңіз!</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="join.choose">Өзіңізге жақын бағытты
+                    таңдап, анкетаны толтырыңыз</p>
+            </div>
+
+            <div class="role-selector">
+                <div class="role-card modern-value-card active" data-role="volunteer">
+                    <div class="modern-value-icon">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h4 data-i18n="join.volunteer_title">Волонтер</h4>
+                    <p data-i18n="join.volunteer_desc">Іс-шараларға көмектесу</p>
+                </div>
+                <div class="role-card modern-value-card" data-role="mentor">
+                    <div class="modern-value-icon">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h4 data-i18n="join.mentor_title">Ментор</h4>
+                    <p data-i18n="join.mentor_desc">Тәжірибемен бөлісу</p>
+                </div>
+            </div>
+
+            <form id="regForm" class="reg-form modern-form">
+                <input type="hidden" id="selectedRole" name="role" value="volunteer">
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div class="form-group">
+                        <label for="fullName" data-i18n="join.label_name">Аты-жөні</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Нұрболат Шайділда" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber" data-i18n="join.label_phone">Телефон нөмірі</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+7 (777) 000-00-00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city" data-i18n="join.label_city">Қала</label>
+                        <input type="text" id="city" name="city" placeholder="Алматы" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="university" data-i18n="join.label_university">Оқу</label>
+                        <input type="text" id="university" name="university" placeholder="Нархоз Университеті" required>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 20px;">
+                    <label for="reason" data-i18n="join.label_reason">Неге AINA-ға қосылғыңыз келеді?</label>
+                    <textarea id="reason" name="reason" rows="3" data-i18n-placeholder="join.placeholder_reason"
+                        placeholder="Қысқаша мақсатыңызды жазыңыз..." style="resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit"
+                    style="width: 100%; padding: 16px; font-size: 1.15rem; border-radius: 12px; margin-top: 25px; box-shadow: 0 10px 20px rgba(245, 166, 35, 0.3);">
+                    <span data-i18n="join.submit_btn">Өтінім жіберу</span>
+                    <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+                </button>
+                <p class="form-hint" style="text-align: center; margin-top: 15px; margin-bottom: 0;"
+                    data-i18n="join.hint">Біз сізбен жақын арада хабарласамыз</p>
+            </form>
+        </div>
+
+        <div class="success-state hidden editorial-block text-center" id="regSuccessState"
+            style="max-width: 650px; margin: 0 auto; padding: 60px 40px;">
+            <div class="success-icon" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 20px;">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 style="font-size: 1.8rem; color: var(--primary-color); margin-bottom: 10px;"
+                data-i18n="join.success_title">Рақмет!</h3>
+            <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 30px;" data-i18n="join.success_desc">
+                Өтініміңіз қабылданды. Жақын арада сізбен хабарласамыз.</p>
+            <a href="index.html" class="btn btn-primary" data-i18n="join.success_btn">Басты бетке қайту</a>
+        </div>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer-grid">
+                <div class="sf-brand">
+                    <a href="index.html" class="logo">
+                        <img src="aina_logo_nobg.png" alt="AINA Logo" class="logo-img"
+                            style="filter: brightness(0) invert(1);">
+                        <span class="logo-text">Aina</span>
+                    </a>
+                    <p class="sf-desc" data-i18n="footer.desc">Студенттер мен балаларды біріктіретін жарық көпір.</p>
+                    <p class="sf-motto" data-i18n="footer.motto">«Ерім дейтін ел болмаса, елім дейтін ер болмайды»</p>
+                    <div class="sf-socials">
+                        <a href="https://www.instagram.com/aina.narxoz/" class="sf-social-btn" target="_blank"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me/aina_narxoz" class="sf-social-btn" target="_blank"
+                            aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#" class="sf-social-btn" target="_blank" aria-label="TikTok"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="sf-nav">
+                    <p class="sf-col-title" data-i18n="footer.nav_title">Навигация</p>
+                    <ul class="sf-links">
+                        <li><a href="about.html" data-i18n="footer.about">Біз туралы</a></li>
+                        <li><a href="about.html#projects" data-i18n="footer.projects">Жобалар</a></li>
+                        <li><a href="about.html#clubs" data-i18n="footer.clubs">Клубтар</a></li>
+                    </ul>
+                </div>
+                <div class="sf-contact">
+                    <p class="sf-col-title" data-i18n="footer.contact_title">Байланыс</p>
+                    <ul class="sf-contact-list">
+                        <li><i class="fa-solid fa-envelope"></i><a
+                                href="mailto:zasarmukiat@gmail.com">zasarmukiat@gmail.com</a></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:+77777411462">+7 777 741 1462</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><span data-i18n="footer.city">Алматы қаласы</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-bottom">
+            <div class="container">
+                <p data-i18n="footer.copyright">© 2026 AINA Қайырымдылық және Жастар қауымдастығы. Барлық құқықтар
+                    қорғалған.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

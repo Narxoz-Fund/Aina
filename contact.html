@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINA | Бізбен байланыс</title>
+    <link rel="icon" type="image/png" href="aina_logo_nobg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="sub-page">
+
+    <!-- Minimal Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content sub-nav">
+            <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="nav.back">Артқа</span></a>
+            <a href="index.html" class="logo centered-logo">
+                <img src="aina_logo_nobg.png" alt="AINA Logo" class="logo-img">
+                <span class="logo-text">Aina</span>
+            </a>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="kk">ҚАЗ</button>
+                <button class="lang-btn" data-lang="ru">РУС</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mini Hero -->
+    <header class="mini-hero mini-hero--contact">
+        <div class="mini-hero-overlay"></div>
+        <div class="mini-hero-content animate-on-scroll">
+            <h1 class="mini-hero-title" data-i18n="contact.hero_title">Бізбен байланыс</h1>
+            <p class="mini-hero-subtitle" data-i18n="contact.hero_subtitle">Сұрақтарыңыз болса, бізбен кез келген ыңғайлы жолмен хабарласыңыз.</p>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content container animate-on-scroll" style="padding-top: 60px; padding-bottom: 60px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto;">
+            
+            <a href="tel:+77777411462" class="cta-card-modern contact-method-card">
+                <div class="cta-modern-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="cta-modern-content">
+                    <h3 data-i18n="contact.phone_title">Телефон арқылы</h3>
+                    <p>+7 777 741 1462</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/77777411462" target="_blank" class="cta-card-modern contact-method-card">
+                <div class="cta-modern-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="cta-modern-content">
+                    <h3 data-i18n="contact.whatsapp_title">WhatsApp желісі</h3>
+                    <p data-i18n="contact.whatsapp_desc">Кез келген уақытта жазыңыз</p>
+                </div>
+            </a>
+
+            <a href="mailto:zasarmukiat@gmail.com" class="cta-card-modern contact-method-card">
+                <div class="cta-modern-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="cta-modern-content">
+                    <h3 data-i18n="contact.email_title">Электронды пошта</h3>
+                    <p>zasarmukiat@gmail.com</p>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer-grid">
+                <div class="sf-brand">
+                    <a href="index.html" class="logo">
+                        <img src="aina_logo_nobg.png" alt="AINA Logo" class="logo-img" style="filter: brightness(0) invert(1);">
+                        <span class="logo-text">Aina</span>
+                    </a>
+                    <p class="sf-desc" data-i18n="footer.desc">Студенттер мен балаларды біріктіретін жарық көпір.</p>
+                    <p class="sf-motto" data-i18n="footer.motto">«Ерім дейтін ел болмаса, елім дейтін ер болмайды»</p>
+                    <div class="sf-socials">
+                        <a href="https://www.instagram.com/aina.narxoz/" class="sf-social-btn" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me/aina_narxoz" class="sf-social-btn" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#" class="sf-social-btn" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="sf-nav">
+                    <p class="sf-col-title" data-i18n="footer.nav_title">Навигация</p>
+                    <ul class="sf-links">
+                        <li><a href="about.html" data-i18n="footer.about">Біз туралы</a></li>
+                        <li><a href="about.html#projects" data-i18n="footer.projects">Жобалар</a></li>
+                        <li><a href="about.html#clubs" data-i18n="footer.clubs">Клубтар</a></li>
+                    </ul>
+                </div>
+                <div class="sf-contact">
+                    <p class="sf-col-title" data-i18n="footer.contact_title">Байланыс</p>
+                    <ul class="sf-contact-list">
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:zasarmukiat@gmail.com">zasarmukiat@gmail.com</a></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:+77777411462">+7 777 741 1462</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><span data-i18n="footer.city">Алматы қаласы</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-bottom">
+            <div class="container">
+                <p data-i18n="footer.copyright">© 2026 AINA Қайырымдылық және Жастар қауымдастығы. Барлық құқықтар қорғалған.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
