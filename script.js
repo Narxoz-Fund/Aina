@@ -64,12 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Күте тұрыңыз...';
                 submitBtn.disabled = true;
 
-                // URLSearchParams - CORS preflight болдырмайды (simple request)
+                // URL-encoded POST: form data is not exposed in the URL.
                 const params = new URLSearchParams(new FormData(regForm));
 
-                // GET сұранысы + параметрлер URL-ға қосылады → CORS мәселесі жоқ
-                const response = await fetch(SCRIPT_URL + '?' + params.toString(), {
-                    method: 'GET',
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+                    },
+                    body: params.toString(),
                 });
 
                 const result = await response.json();

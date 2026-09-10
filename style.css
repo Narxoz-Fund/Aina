@@ -1377,6 +1377,15 @@ ul {
     display: none !important;
 }
 
+/* Honeypot field: hidden from visitors, but checked by the server to catch simple bots. */
+.honeypot {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+}
+
 /* --- ROLE SELECTOR --- */
 .role-selector {
     display: grid;

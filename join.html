@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 
 <body class="sub-page">
@@ -72,6 +73,10 @@
 
             <form id="regForm" class="reg-form modern-form">
                 <input type="hidden" id="selectedRole" name="role" value="volunteer">
+                <div class="honeypot" aria-hidden="true">
+                    <label for="website">Website</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                </div>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                     <div class="form-group">
@@ -113,6 +118,8 @@
                     <textarea id="reason" name="reason" rows="3" data-i18n-placeholder="join.placeholder_reason"
                         placeholder="Қысқаша мақсатыңызды жазыңыз..." style="resize: vertical;"></textarea>
                 </div>
+
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAAEu-PQU3Yxl-r3f1" data-theme="light"></div>
 
                 <button type="submit" class="btn btn-primary btn-submit"
                     style="width: 100%; padding: 16px; font-size: 1.15rem; border-radius: 12px; margin-top: 25px; box-shadow: 0 10px 20px rgba(245, 166, 35, 0.3);">
