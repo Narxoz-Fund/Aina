@@ -26,6 +26,7 @@
             <div class="lang-switcher">
                 <button class="lang-btn active" data-lang="kk">ҚАЗ</button>
                 <button class="lang-btn" data-lang="ru">РУС</button>
+                <button class="lang-btn" data-lang="en">ENG</button>
             </div>
         </div>
     </nav>
@@ -87,7 +88,23 @@
                     </div>
                     <div class="form-group">
                         <label for="university" data-i18n="join.label_university">Оқу</label>
-                        <input type="text" id="university" name="university" placeholder="Нархоз Университеті" required>
+                        <input type="text" id="university" name="university" data-i18n-placeholder="join.placeholder_university"
+                            placeholder="Нархоз Университеті" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course" data-i18n="join.label_course">Курс</label>
+                        <select id="course" name="course" required>
+                            <option value="" selected disabled data-i18n="join.course_placeholder">Курсты таңдаңыз</option>
+                            <option value="1" data-i18n="join.course_1">1-курс</option>
+                            <option value="2" data-i18n="join.course_2">2-курс</option>
+                            <option value="3" data-i18n="join.course_3">3-курс</option>
+                            <option value="4" data-i18n="join.course_4">4-курс</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialty" data-i18n="join.label_specialty">Мамандық</label>
+                        <input type="text" id="specialty" name="specialty" data-i18n-placeholder="join.placeholder_specialty"
+                            placeholder="Мысалы: Менеджмент" required>
                     </div>
                 </div>
 
