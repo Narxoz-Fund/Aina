@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aina-edu.kz/sitemap.xml
