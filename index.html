@@ -6,21 +6,25 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO Title -->
     <title>AINA — Қайырымдылық және жастар қауымдастығы | Алматы</title>
 
+    <!-- SEO Description -->
     <meta name="description"
-        content="AINA — Алматыдағы студенттер мен балаларды біріктіретін қайырымдылық және жастар қауымдастығы. Волонтерлік, менторлық, білім беру және әлеуметтік жобаларға қосылыңыз.">
+        content="AINA (Айна) — Алматыдағы студенттер мен балаларды біріктіретін қайырымдылық және жастар қауымдастығы. Волонтерлік, менторлық, білім беру және әлеуметтік жобаларға қосылыңыз.">
 
+    <!-- Search Engine -->
     <meta name="robots" content="index, follow">
 
+    <!-- Canonical -->
     <link rel="canonical" href="https://aina-edu.kz/">
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="AINA — Қайырымдылық және жастар қауымдастығы">
+        content="AINA (Айна) — Қайырымдылық және жастар қауымдастығы">
 
     <meta property="og:description"
-        content="Студенттер мен балаларды біріктіретін AINA қауымдастығына қосылыңыз. Волонтерлік, менторлық және әлеуметтік жобалар.">
+        content="AINA (Айна) — студенттер мен балаларды біріктіретін қайырымдылық және жастар қауымдастығы. Волонтерлік, менторлық және әлеуметтік жобаларға қосылыңыз.">
 
     <meta property="og:type" content="website">
 
@@ -29,8 +33,10 @@
     <meta property="og:image"
         content="https://aina-edu.kz/aina_about_hero.png">
 
-    <meta property="og:locale" content="kk_KZ">
+    <meta property="og:site_name"
+        content="AINA (Айна)">
 
+    <meta property="og:locale" content="kk_KZ">
     <meta property="og:locale:alternate" content="ru_RU">
     <meta property="og:locale:alternate" content="en_US">
 
@@ -39,7 +45,6 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
@@ -54,183 +59,583 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- ========================================================= -->
+    <!-- STRUCTURED DATA: AINA ORGANIZATION + WEBSITE -->
+    <!-- ========================================================= -->
+
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AINA",
-  "alternateName": "AINA Қайырымдылық және Жастар қауымдастығы",
-  "url": "https://aina-edu.kz/",
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://aina-edu.kz/aina_logo_nobg.png"
-  },
-  "description": "AINA — студенттер мен балаларды біріктіретін қайырымдылық және жастар қауымдастығы.",
-  "email": "zasarmukiat@gmail.com",
-  "telephone": "+77777411462",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Алматы",
-    "addressCountry": "KZ"
-  },
-  "sameAs": [
-    "https://www.instagram.com/aina.narxoz/",
-    "https://t.me/aina_narxoz"
-  ]
-}
-</script>
-     
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+
+        {
+          "@type": "Organization",
+          "@id": "https://aina-edu.kz/#organization",
+
+          "name": "AINA",
+
+          "alternateName": [
+            "Aina",
+            "Айна",
+            "Aina Narxoz"
+          ],
+
+          "url": "https://aina-edu.kz/",
+
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://aina-edu.kz/aina_logo_nobg.png"
+          },
+
+          "description": "AINA (Айна) — студенттер мен балаларды біріктіретін қайырымдылық және жастар қауымдастығы.",
+
+          "email": "zasarmukiat@gmail.com",
+
+          "telephone": "+7 777 741 1462",
+
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Алматы",
+            "addressCountry": "KZ"
+          },
+
+          "sameAs": [
+            "https://www.instagram.com/aina.narxoz/",
+            "https://t.me/aina_narxoz"
+          ]
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://aina-edu.kz/#website",
+
+          "name": "AINA",
+
+          "alternateName": [
+            "Aina",
+            "Айна"
+          ],
+
+          "url": "https://aina-edu.kz/",
+
+          "publisher": {
+            "@id": "https://aina-edu.kz/#organization"
+          },
+
+          "inLanguage": "kk"
+        }
+
+      ]
+    }
+    </script>
+
 </head>
+
 <body>
 
-    <!-- Navbar -->
+    <!-- ========================================================= -->
+    <!-- NAVBAR -->
+    <!-- ========================================================= -->
+
     <nav class="navbar" id="navbar">
+
         <div class="container nav-content">
-            <a href="#" class="logo">
-                <img src="aina_logo_nobg.png" alt="AINA қайырымдылық және жастар қауымдастығының логотипі" class="logo-img">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+
+                <img
+                    src="aina_logo_nobg.png"
+                    alt="AINA (Айна) қайырымдылық және жастар қауымдастығының логотипі"
+                    class="logo-img">
+
                 <span class="logo-text">Aina</span>
+
             </a>
 
+            <!-- Navigation Actions -->
             <div class="nav-actions">
+
                 <!-- Language Switcher -->
                 <div class="lang-switcher">
-                    <button class="lang-btn active" data-lang="kk">ҚАЗ</button>
-                    <button class="lang-btn" data-lang="ru">РУС</button>
-                    <button class="lang-btn" data-lang="en">ENG</button>
+
+                    <button
+                        class="lang-btn active"
+                        data-lang="kk">
+                        ҚАЗ
+                    </button>
+
+                    <button
+                        class="lang-btn"
+                        data-lang="ru">
+                        РУС
+                    </button>
+
+                    <button
+                        class="lang-btn"
+                        data-lang="en">
+                        ENG
+                    </button>
+
                 </div>
-                <a href="join.html" class="btn btn-primary" data-i18n="nav.join_btn">Қосылу</a>
+
+                <!-- Join Button -->
+                <a
+                    href="join.html"
+                    class="btn btn-primary"
+                    data-i18n="nav.join_btn">
+                    Қосылу
+                </a>
+
             </div>
+
         </div>
+
     </nav>
 
-    <!-- Hero Section -->
+
+    <!-- ========================================================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================================================= -->
+
     <header class="hero" id="home">
+
         <div class="hero-overlay"></div>
+
         <div class="container hero-content">
-           <h1 class="hero-title fade-in-up" data-i18n="index.hero_title">
-    AINA — қайырымдылық және жастар қауымдастығы
-    <br>
-    <span class="highlight">Білім мен мейірімнің жарық көпірі</span>
-</h1>
-           <p class="hero-subtitle fade-in-up delay-1"
-   data-i18n="index.hero_subtitle">
-    AINA — студенттер мен балаларды біріктіретін қайырымдылық
-    және жастар қауымдастығы. Біз волонтерлік, менторлық,
-    білім беру және әлеуметтік жобалар арқылы балалардың
-    болашағына қолдау көрсетеміз.
-</p>
+
+            <!-- Main Heading -->
+            <h1
+                class="hero-title fade-in-up"
+                data-i18n="index.hero_title">
+
+                AINA (Айна) — қайырымдылық және жастар қауымдастығы
+
+                <br>
+
+                <span class="highlight">
+                    Білім мен мейірімнің жарық көпірі
+                </span>
+
+            </h1>
+
+
+            <!-- Hero Description -->
+            <p
+                class="hero-subtitle fade-in-up delay-1"
+                data-i18n="index.hero_subtitle">
+
+                AINA (Айна) — студенттер мен балаларды біріктіретін
+                қайырымдылық және жастар қауымдастығы.
+                Біз волонтерлік, менторлық, білім беру және әлеуметтік
+                жобалар арқылы балалардың болашағына қолдау көрсетеміз.
+
+            </p>
+
+
+            <!-- Hero Buttons -->
             <div class="hero-buttons fade-in-up delay-2">
-                <a href="join.html" class="btn btn-primary btn-lg" data-i18n="index.hero_btn1">Волонтер болу</a>
-                <a href="about.html" class="btn btn-outline btn-lg" data-i18n="index.hero_btn2">Толығырақ білу</a>
+
+                <a
+                    href="join.html"
+                    class="btn btn-primary btn-lg"
+                    data-i18n="index.hero_btn1">
+                    Волонтер болу
+                </a>
+
+                <a
+                    href="about.html"
+                    class="btn btn-outline btn-lg"
+                    data-i18n="index.hero_btn2">
+                    Толығырақ білу
+                </a>
+
             </div>
+
         </div>
+
     </header>
 
-    <!-- Main Features / Navigation Section -->
+
+    <!-- ========================================================= -->
+    <!-- FEATURES / NAVIGATION SECTION -->
+    <!-- ========================================================= -->
+
     <section class="features-section animate-on-scroll">
+
         <div class="container">
+
+            <!-- Section Header -->
             <div class="section-header text-center mb-5">
-                <span class="section-badge" data-i18n="index.section_badge">Бізге қосылыңыз</span>
-                <h2 class="section-title" data-i18n="index.section_title">AINA-мен бірге әлемді өзгерту</h2>
-                <p class="section-subtitle" data-i18n="index.section_subtitle">Біздің қауымдастықтың бір бөлшегі болып, жастардың дамуына үлес қосыңыз.</p>
+
+                <span
+                    class="section-badge"
+                    data-i18n="index.section_badge">
+                    Бізге қосылыңыз
+                </span>
+
+                <h2
+                    class="section-title"
+                    data-i18n="index.section_title">
+                    AINA-мен бірге әлемді өзгерту
+                </h2>
+
+                <p
+                    class="section-subtitle"
+                    data-i18n="index.section_subtitle">
+                    Біздің қауымдастықтың бір бөлшегі болып,
+                    жастардың дамуына үлес қосыңыз.
+                </p>
+
             </div>
-            
+
+
+            <!-- Cards -->
             <div class="cta-grid">
-                <a href="about.html" class="cta-card-modern">
+
+
+                <!-- ================================================= -->
+                <!-- ABOUT CARD -->
+                <!-- ================================================= -->
+
+                <a
+                    href="about.html"
+                    class="cta-card-modern">
+
                     <div class="cta-modern-icon">
+
                         <i class="fa-solid fa-globe"></i>
+
                     </div>
+
                     <div class="cta-modern-content">
-                        <h3 data-i18n="index.card1_title">Біз туралы</h3>
-                        <p data-i18n="index.card1_desc">AINA ұйымының миссиясы, мақсаттары және басты құндылықтарымен танысыңыз.</p>
+
+                        <h3 data-i18n="index.card1_title">
+                            Біз туралы
+                        </h3>
+
+                        <p data-i18n="index.card1_desc">
+                            AINA ұйымының миссиясы,
+                            мақсаттары және басты
+                            құндылықтарымен танысыңыз.
+                        </p>
+
                     </div>
+
                     <div class="cta-modern-arrow">
+
                         <i class="fa-solid fa-arrow-right"></i>
+
                     </div>
+
                 </a>
 
-                <a href="join.html" class="cta-card-modern active">
+
+                <!-- ================================================= -->
+                <!-- VOLUNTEER CARD -->
+                <!-- ================================================= -->
+
+                <a
+                    href="join.html"
+                    class="cta-card-modern active">
+
                     <div class="cta-modern-icon">
+
                         <i class="fa-solid fa-hand-holding-heart"></i>
+
                     </div>
+
                     <div class="cta-modern-content">
-                        <h3 data-i18n="index.card2_title">Волонтер болу</h3>
-                        <p data-i18n="index.card2_desc">Игі істерге атсалысып, қоғамға пайдаңызды тигізіңіз. Командамызға қосылыңыз!</p>
+
+                        <h3 data-i18n="index.card2_title">
+                            Волонтер болу
+                        </h3>
+
+                        <p data-i18n="index.card2_desc">
+                            Игі істерге атсалысып,
+                            қоғамға пайдаңызды тигізіңіз.
+                            Командамызға қосылыңыз!
+                        </p>
+
                     </div>
+
                     <div class="cta-modern-arrow">
+
                         <i class="fa-solid fa-arrow-right"></i>
+
                     </div>
+
                 </a>
 
-                <a href="contact.html" class="cta-card-modern">
+
+                <!-- ================================================= -->
+                <!-- CONTACT CARD -->
+                <!-- ================================================= -->
+
+                <a
+                    href="contact.html"
+                    class="cta-card-modern">
+
                     <div class="cta-modern-icon">
+
                         <i class="fa-solid fa-headset"></i>
+
                     </div>
+
                     <div class="cta-modern-content">
-                        <h3 data-i18n="index.card3_title">Байланыс</h3>
-                        <p data-i18n="index.card3_desc">Сұрақтарыңыз немесе ұсыныстарыңыз болса, бізбен байланысуға әрқашан қуаныштымыз.</p>
+
+                        <h3 data-i18n="index.card3_title">
+                            Байланыс
+                        </h3>
+
+                        <p data-i18n="index.card3_desc">
+                            Сұрақтарыңыз немесе ұсыныстарыңыз
+                            болса, бізбен байланысуға
+                            әрқашан қуаныштымыз.
+                        </p>
+
                     </div>
+
                     <div class="cta-modern-arrow">
+
                         <i class="fa-solid fa-arrow-right"></i>
+
                     </div>
+
                 </a>
+
+
             </div>
+
         </div>
+
     </section>
 
 
+    <!-- ========================================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================================= -->
 
-    <!-- Site Footer -->
     <footer class="site-footer animate-on-scroll">
+
         <div class="container">
+
             <div class="site-footer-grid">
-                <!-- Brand -->
+
+
+                <!-- ================================================= -->
+                <!-- BRAND -->
+                <!-- ================================================= -->
+
                 <div class="sf-brand">
-                    <a href="index.html" class="logo">
+
+                    <a
+                        href="index.html"
+                        class="logo">
+
                         <img
-    src="aina_logo_nobg.png"
-    alt="AINA қайырымдылық және жастар қауымдастығының логотипі"
-    class="logo-img" style="filter: brightness(0) invert(1);">
-                        <span class="logo-text">Aina</span>
+                            src="aina_logo_nobg.png"
+                            alt="AINA (Айна) қайырымдылық және жастар қауымдастығының логотипі"
+                            class="logo-img"
+                            style="filter: brightness(0) invert(1);">
+
+                        <span class="logo-text">
+                            Aina
+                        </span>
+
                     </a>
-                    <p class="sf-desc" data-i18n="footer.desc">Студенттер мен балаларды біріктіретін жарық көпір.</p>
-                    <p class="sf-motto" data-i18n="footer.motto">«Ерім дейтін ел болмаса, елім дейтін ер болмайды»</p>
+
+
+                    <p
+                        class="sf-desc"
+                        data-i18n="footer.desc">
+                        Студенттер мен балаларды біріктіретін
+                        жарық көпір.
+                    </p>
+
+
+                    <p
+                        class="sf-motto"
+                        data-i18n="footer.motto">
+                        «Ерім дейтін ел болмаса,
+                        елім дейтін ер болмайды»
+                    </p>
+
+
+                    <!-- Social Links -->
                     <div class="sf-socials">
-                        <a href="https://www.instagram.com/aina.narxoz/" class="sf-social-btn" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://t.me/aina_narxoz" class="sf-social-btn" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-                        <a href="#" class="sf-social-btn" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+
+                        <a
+                            href="https://www.instagram.com/aina.narxoz/"
+                            class="sf-social-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="AINA Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://t.me/aina_narxoz"
+                            class="sf-social-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="AINA Telegram">
+
+                            <i class="fa-brands fa-telegram"></i>
+
+                        </a>
+
+
+                        <a
+                            href="#"
+                            class="sf-social-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="AINA TikTok">
+
+                            <i class="fa-brands fa-tiktok"></i>
+
+                        </a>
+
                     </div>
+
                 </div>
-                <!-- Navigation -->
+
+
+                <!-- ================================================= -->
+                <!-- NAVIGATION -->
+                <!-- ================================================= -->
+
                 <div class="sf-nav">
-                    <p class="sf-col-title" data-i18n="footer.nav_title">Навигация</p>
+
+                    <p
+                        class="sf-col-title"
+                        data-i18n="footer.nav_title">
+                        Навигация
+                    </p>
+
+
                     <ul class="sf-links">
-                        <li><a href="about.html" data-i18n="footer.about">Біз туралы</a></li>
-                        <li><a href="about.html#projects" data-i18n="footer.projects">Жобалар</a></li>
-                        <li><a href="about.html#clubs" data-i18n="footer.clubs">Клубтар</a></li>
+
+                        <li>
+                            <a
+                                href="about.html"
+                                data-i18n="footer.about">
+                                Біз туралы
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="about.html#projects"
+                                data-i18n="footer.projects">
+                                Жобалар
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="about.html#clubs"
+                                data-i18n="footer.clubs">
+                                Клубтар
+                            </a>
+                        </li>
+
                     </ul>
+
                 </div>
-                <!-- Contact -->
+
+
+                <!-- ================================================= -->
+                <!-- CONTACT -->
+                <!-- ================================================= -->
+
                 <div class="sf-contact">
-                    <p class="sf-col-title" data-i18n="footer.contact_title">Байланыс</p>
+
+                    <p
+                        class="sf-col-title"
+                        data-i18n="footer.contact_title">
+                        Байланыс
+                    </p>
+
+
                     <ul class="sf-contact-list">
-                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:zasarmukiat@gmail.com">zasarmukiat@gmail.com</a></li>
-                        <li><i class="fa-solid fa-phone"></i><a href="tel:+77777411462">+7 777 741 1462</a></li>
-                        <li><i class="fa-solid fa-location-dot"></i><span data-i18n="footer.city">Алматы қаласы</span></li>
+
+                        <!-- Email -->
+                        <li>
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <a
+                                href="mailto:zasarmukiat@gmail.com">
+                                zasarmukiat@gmail.com
+                            </a>
+
+                        </li>
+
+
+                        <!-- Phone -->
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <a
+                                href="tel:+77777411462">
+                                +7 777 741 1462
+                            </a>
+
+                        </li>
+
+
+                        <!-- Location -->
+                        <li>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span data-i18n="footer.city">
+                                Алматы қаласы
+                            </span>
+
+                        </li>
+
                     </ul>
+
                 </div>
+
+
             </div>
+
         </div>
+
+
+        <!-- Footer Bottom -->
         <div class="site-footer-bottom">
+
             <div class="container">
-                <p data-i18n="footer.copyright">© 2026 AINA Қайырымдылық және Жастар қауымдастығы. Барлық құқықтар қорғалған.</p>
+
+                <p data-i18n="footer.copyright">
+                    © 2026 AINA Қайырымдылық және
+                    Жастар қауымдастығы.
+                    Барлық құқықтар қорғалған.
+                </p>
+
             </div>
+
         </div>
+
     </footer>
 
-    <!-- Scripts -->
+
+    <!-- ========================================================= -->
+    <!-- SCRIPTS -->
+    <!-- ========================================================= -->
+
     <script src="i18n.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
